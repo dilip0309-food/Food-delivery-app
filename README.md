@@ -16,3 +16,10 @@ This project analyzes food delivery data using Python. It includes data cleaning
 - Calculate Total Bill
 - Input Validation
 - Basic Testing Completed
+
+
+## User Experience
+
+- Easy Menu
+- Clear Error Messages
+- Simple Navigation
