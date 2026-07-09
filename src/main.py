@@ -42,3 +42,20 @@ food_menu = {
 print("\n------ FOOD MENU ------")
 for item, details in food_menu.items():
     print(f"{item}. {details[0]} - ₹{details[1]}")
+"""
+Core Feature 2:
+Allows the user to select a food item and add it to the cart.
+"""
+
+# Core Feature 2 - Add to Cart
+
+cart = []
+
+choice = int(input("Enter food item number: "))
+
+if choice in food_menu:
+    cart.append(food_menu[choice])
+    print("Item added to cart!")
+    print(cart)
+else:
+    print("Invalid item.")
