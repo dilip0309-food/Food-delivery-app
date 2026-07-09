@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset
-df = pd.read_csv("train.csv")
+df = pd.read_csv("data/raw/train.csv")
 
 print("Food Delivery Dataset")
 print("---------------------")
