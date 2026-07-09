@@ -25,7 +25,6 @@ print(df.duplicated().sum())
 print("\nData Types:")
 print(df.dtypes)
 """
-"
 Core Feature 1:
 Displays the available food items and their prices.
 """
@@ -62,9 +61,8 @@ try:
 
 except ValueError:
     print("Please enter a valid number.")
-
     
-    """
+"""
 Core Feature 3:
 Calculates the total bill amount for the selected food items.
 """
