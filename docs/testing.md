@@ -18,3 +18,13 @@ Overall Result: All basic tests passed.
 - Empty Input Handling - Passed
 
 Status: Completed
+
+# User Testing
+
+User 1
+- Easy to use
+- Menu is clear
+
+User 2
+- Bill calculation works
+- Suggested better instructions
