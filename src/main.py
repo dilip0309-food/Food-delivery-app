@@ -59,3 +59,15 @@ if choice in food_menu:
     print(cart)
 else:
     print("Invalid item.")
+    """
+Core Feature 3:
+Calculates the total bill amount for the selected food items.
+"""
+# Core Feature 3 - Total Bill
+
+total = 0
+
+for item in cart:
+    total += item[1]
+
+print("Total Bill: ₹", total)
