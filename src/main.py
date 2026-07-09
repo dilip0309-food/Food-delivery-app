@@ -91,3 +91,15 @@ for item, details in food_menu.items():
 
 if not found:
     print("Food item not found.")
+    
+"""
+Advanced Feature 2:
+Remove Item From Cart
+"""
+
+remove = input("Enter food name to remove: ")
+
+cart = [item for item in cart if item[0].lower() != remove.lower()]
+
+print("Updated Cart")
+print(cart)
