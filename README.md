@@ -23,3 +23,8 @@ This project analyzes food delivery data using Python. It includes data cleaning
 - Easy Menu
 - Clear Error Messages
 - Simple Navigation
+
+  ## Performance
+
+- Optimized menu search
+- Handles invalid input
