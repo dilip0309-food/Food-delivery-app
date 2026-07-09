@@ -74,3 +74,20 @@ for item in cart:
     total += item[1]
 
 print("Total Bill: ₹", total)
+
+"""
+Advanced Feature 1:
+Search Food Item
+"""
+
+search = input("Search food item: ")
+
+found = False
+
+for item, details in food_menu.items():
+    if search.lower() == details[0].lower():
+        print("Found:", details[0], "- ₹", details[1])
+        found = True
+
+if not found:
+    print("Food item not found.")
