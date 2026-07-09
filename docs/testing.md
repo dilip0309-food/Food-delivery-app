@@ -9,3 +9,12 @@
 5. Entered abc - Error handled successfully ✅
 
 Overall Result: All basic tests passed.
+## Manual Testing
+
+- Menu Display - Passed
+- Add to Cart - Passed
+- Total Bill - Passed
+- Invalid Input Handling - Passed
+- Empty Input Handling - Passed
+
+Status: Completed
