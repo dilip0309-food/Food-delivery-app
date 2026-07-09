@@ -51,14 +51,19 @@ Allows the user to select a food item and add it to the cart.
 
 cart = []
 
-choice = int(input("Enter food item number: "))
+try:
+    choice = int(input("Enter food item number: "))
 
-if choice in food_menu:
-    cart.append(food_menu[choice])
-    print("Item added to cart!")
-    print(cart)
-else:
-    print("Invalid item.")
+    if choice in food_menu:
+        cart.append(food_menu[choice])
+        print("Item added to cart!")
+    else:
+        print("Invalid item.")
+
+except ValueError:
+    print("Please enter a valid number.")
+
+    
     """
 Core Feature 3:
 Calculates the total bill amount for the selected food items.
