@@ -28,3 +28,12 @@ This project analyzes food delivery data using Python. It includes data cleaning
 
 - Optimized menu search
 - Handles invalid input
+
+## Final Features
+
+- Food Menu
+- Add to Cart
+- Total Bill
+- Search Food
+- Remove Item
+- Input Validation
