@@ -18,3 +18,12 @@ st.subheader("📋 Food Menu")
 
 for item, price in food_menu.items():
     st.write(f"{item} - ₹{price}")
+
+st.subheader("🍽️ Select Your Food")
+
+selected_food = st.selectbox(
+    "Choose a food item",
+    list(food_menu.keys())
+)
+
+st.write("You selected:", selected_food)
