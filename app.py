@@ -33,16 +33,23 @@ st.write("You selected:", selected_food)
 st.subheader("🛒 Add to Cart")
 
 if st.button("Add to Cart"):
-    price = food_menu[selected_food]
+    st.session_state.cart.append(selected_food)
     st.success(f"{selected_food} added to cart! ✅")
-    st.write(f"Price: ₹{price}")
 
+st.subheader("🛒 Your Cart")
+
+if st.session_state.cart:
+    for item in st.session_state.cart:
+        st.write(f"• {item}")
+else:
+    st.write("Your cart is empty.")
+    
 st.subheader("💰 Total Bill")
 
 if st.button("Show Total Bill"):
-    total = food_menu[selected_food]
+    total = sum(food_menu[item] for item in st.session_state.cart)
     st.success(f"Your Total Bill is ₹{total}")
-
+    
 st.subheader("🔍 Search Food")
 
 search = st.text_input("Enter food name")
