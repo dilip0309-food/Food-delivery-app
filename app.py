@@ -40,3 +40,14 @@ st.subheader("💰 Total Bill")
 if st.button("Show Total Bill"):
     total = food_menu[selected_food]
     st.success(f"Your Total Bill is ₹{total}")
+
+st.subheader("🔍 Search Food")
+
+search = st.text_input("Enter food name")
+
+if search:
+    if search.title() in food_menu:
+        st.success(f"{search.title()} is available! 🎉")
+        st.write(f"Price: ₹{food_menu[search.title()]}")
+    else:
+        st.error("Food item not found.")
