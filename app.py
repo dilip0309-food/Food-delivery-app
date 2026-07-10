@@ -60,3 +60,19 @@ if search:
         st.write(f"Price: ₹{food_menu[search.title()]}")
     else:
         st.error("Food item not found.")
+
+st.subheader("❌ Remove from Cart")
+
+if st.session_state.cart:
+    remove_item = st.selectbox(
+        "Select item to remove",
+        st.session_state.cart,
+        key="remove_item"
+    )
+
+    if st.button("Remove Item"):
+        st.session_state.cart.remove(remove_item)
+        st.success(f"{remove_item} removed from cart! 🗑️")
+        st.rerun()
+else:
+    st.info("Cart is empty.")
