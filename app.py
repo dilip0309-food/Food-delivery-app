@@ -34,3 +34,9 @@ if st.button("Add to Cart"):
     price = food_menu[selected_food]
     st.success(f"{selected_food} added to cart! ✅")
     st.write(f"Price: ₹{price}")
+
+st.subheader("💰 Total Bill")
+
+if st.button("Show Total Bill"):
+    total = food_menu[selected_food]
+    st.success(f"Your Total Bill is ₹{total}")
