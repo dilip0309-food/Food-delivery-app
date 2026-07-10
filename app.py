@@ -13,6 +13,8 @@ food_menu = {
     "Fried Rice": 180,
     "Sandwich": 120
 }
+if "cart" not in st.session_state:
+    st.session_state.cart = []
 
 st.subheader("📋 Food Menu")
 
