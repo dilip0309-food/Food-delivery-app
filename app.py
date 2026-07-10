@@ -27,3 +27,10 @@ selected_food = st.selectbox(
 )
 
 st.write("You selected:", selected_food)
+
+st.subheader("🛒 Add to Cart")
+
+if st.button("Add to Cart"):
+    price = food_menu[selected_food]
+    st.success(f"{selected_food} added to cart! ✅")
+    st.write(f"Price: ₹{price}")
